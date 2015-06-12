@@ -15,7 +15,7 @@ class GenericCrop:
         return {"Light need":self._light_need, "Water need":self._water_need}
 
     def report(self):
-        return {"Growth":self._growth, "Days growing":self._days_growing, "Status":self._status, "Type":self._type}
+        return {"Type":self._type, "Status":self._status, "Growth":self._growth, "Days growing":self._days_growing}
 
     def _update_status(self):
         if self._growth > 15:
