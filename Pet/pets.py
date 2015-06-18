@@ -1,4 +1,6 @@
 from dog_class import *
+from cat_class import *
+
 
 def display_menu():
     print("")

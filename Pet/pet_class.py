@@ -104,7 +104,7 @@ class Pet:
             print("I'm too tired for that")
 
     def stats(self):
-        return {"Health":self.health, "Energy":self.energy, "Hunger":self.hunger, "Mood":self.mood, "Size":self.size}
+        return {"Health":self.health, "Energy":self.energy, "Hunger":self.hunger, "Mood":self.mood, "Size":self.size, "Level":self.level}
 
     def level(self):
         return {"Name":self.name, "Animal":self.animal, "XP":self.xp, "Level":self.level}
@@ -168,7 +168,7 @@ def manage_pet(pet):
         elif option == 2:
             display_exercises()
             print("")
-            exercise = input("How would you like to exercise your dog? ")
+            exercise = input("How would you like to exercise your pet? ")
             pet.exercise(exercise)
         elif option == 3:
             print(pet.stats())
