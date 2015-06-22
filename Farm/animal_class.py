@@ -20,9 +20,9 @@ class GenericAnimal:
 
     def _update_status(self):
         if self._weight > 15:
-            self._status = "Meat grinder"
+            self._status = "Old"
         elif self._weight > 10:
-            self._status = "Plump"
+            self._status = "Mature"
         elif self._weight > 5:
             self.status = "Young"
         elif self._weight > 0:
@@ -106,10 +106,11 @@ def manage_animal(animal):
         elif option == 0:
             noexit = False
             print("")
-    print("Thank you for using the crop management program")
+    print("Thank you for using the animal management program")
+    quit()
         
 def main():
-    new_animal = GenericAnimal(1, 4, 3)
+    new_animal = GenericAnimal(1, 4, 6)
     manage_animal(new_animal)
           
 if __name__ == "__main__":
