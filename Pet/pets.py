@@ -1,5 +1,7 @@
 from dog_class import *
 from cat_class import *
+from fish_class import *
+from monkey_class import *
 
 
 def display_menu():
@@ -42,6 +44,8 @@ def create_pet():
 
 def main():
     new_pet = create_pet()
+    new_pet.name = input("What would you like to name your pet? ")
+    print("")
     manage_pet(new_pet)
 
 if __name__ == "__main__":
