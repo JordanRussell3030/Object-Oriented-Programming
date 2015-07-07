@@ -1,6 +1,6 @@
 from graphic_field_item_class import *
 
-class CropGraphicsPixmapItem(FieldItemGraphicsPixmapItem):
+class CropGraphicsPixmapItem(FieldItemGraphicPixmapItem):
     """This class provides a pixmap item with a preset image for the crop"""
     def __init__(self, graphics_list):
         super().__init__(graphics_list)
@@ -16,5 +16,5 @@ class CropGraphicsPixmapItem(FieldItemGraphicsPixmapItem):
             self.setPixmap(QPixmap(self.available_graphics[2]).scaledToWidth(25, 1))
         elif self.crop._status == "Mature":
             self.setPixmap(QPixmap(self.available_graphics[3]).scaledToWidth(25, 1))
-        elif self.crop._status == "Old"
+        elif self.crop._status == "Old":
             self.setPixmap(QPixmap(self.available_graphics[4]).scaledToWidth(25, 1))

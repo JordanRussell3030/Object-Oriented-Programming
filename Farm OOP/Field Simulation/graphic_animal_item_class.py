@@ -1,6 +1,6 @@
 from graphic_field_item_class import *
 
-class AnimalGraphicsPixmapItem(FieldItemGraphicsPixmapItem):
+class AnimalGraphicsPixmapItem(FieldItemGraphicPixmapItem):
     """This class provides a pixmap item with a preset image for the animal"""
     def __init__(self, graphics_list):
         super().__init__(graphics_list)
